@@ -1,0 +1,9 @@
+ __        __                __          __           
+[  |  _   [  |              [  |        |  ]          
+ | | / ]   | |--.    .---.   | |    .--.| |    .--.   
+ | '' <    | .-. |  / /__\\  | |  / /'`\' |  / .'`\ \ 
+ | |`\ \   | | | |  | \__.,  | |  | \__/  |  | \__. | 
+[__|  \_] [___]|__]  '.__.' [___]  '.__.;__]  '.__.'
+                                                        - Vamshi, Divya & Sai Rohit
+${application.title} ${application.version}
+Powered by Spring Boot ${spring-boot.version}
