@@ -1,4 +1,4 @@
-package com.play.games.kheldo.game;
+package com.play.games.kheldo.game.dao.modal;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -28,6 +28,34 @@ public class Game {
     private String createdBy;
 
     private String updatedBy;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public Date getCreatedTime() {
+        return createdTime;
+    }
+
+    public Date getUpdatedTime() {
+        return updatedTime;
+    }
+
+    public String getCreatedBy() {
+        return createdBy;
+    }
+
+    public String getUpdatedBy() {
+        return updatedBy;
+    }
 
     @Override
     public String toString() {
