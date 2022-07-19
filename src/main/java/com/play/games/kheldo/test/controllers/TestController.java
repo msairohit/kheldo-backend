@@ -1,4 +1,4 @@
-package com.play.games.kheldo.controllers;
+package com.play.games.kheldo.test.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

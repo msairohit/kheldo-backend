@@ -1,10 +1,11 @@
-package com.play.games.kheldo.quiz;
+package com.play.games.kheldo.quiz.modal;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Question {
@@ -15,10 +16,6 @@ public class Question {
 
     @Column(nullable = false)
     private String question;
-
-    @OneToOne
-    @JoinColumn(name = "correct_choice_id")
-    private Choice choice;
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
@@ -36,7 +33,6 @@ public class Question {
         return "Question{" +
                 "id=" + id +
                 ", question='" + question + '\'' +
-                ", choice=" + choice +
                 ", createdTime=" + createdTime +
                 ", updatedTime=" + updatedTime +
                 ", createdBy='" + createdBy + '\'' +

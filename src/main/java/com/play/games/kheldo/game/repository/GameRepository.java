@@ -1,6 +1,6 @@
-package com.play.games.kheldo.game.dao.repository;
+package com.play.games.kheldo.game.repository;
 
-import com.play.games.kheldo.game.dao.modal.Game;
+import com.play.games.kheldo.game.modal.Game;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

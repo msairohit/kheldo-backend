@@ -1,4 +1,4 @@
-package com.play.games.kheldo.quiz;
+package com.play.games.kheldo.quiz.modal;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -20,6 +20,9 @@ public class Choice {
     @JoinColumn(name = "question_id", nullable = false)
     private Question question;
 
+    @Column
+    private boolean isCorrect;
+
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
     private Date createdTime;
@@ -31,16 +34,4 @@ public class Choice {
 
     private String updatedBy;
 
-    @Override
-    public String toString() {
-        return "Choice{" +
-                "id=" + id +
-                ", choice='" + choice + '\'' +
-                ", question=" + question +
-                ", createdTime=" + createdTime +
-                ", updatedTime=" + updatedTime +
-                ", createdBy='" + createdBy + '\'' +
-                ", updatedBy='" + updatedBy + '\'' +
-                '}';
-    }
 }

@@ -1,4 +1,4 @@
-package com.play.games.kheldo.quiz;
+package com.play.games.kheldo.quiz.modal;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
