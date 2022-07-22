@@ -1,5 +1,8 @@
 package com.play.games.kheldo.game.modal;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -7,6 +10,9 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Game {
 
     @Id
